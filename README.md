@@ -15,6 +15,27 @@
 
 - [小米小爱开放平台](https://developers.xiaoai.mi.com)
 
+意图配置
+```
+打开{text}
+启动{text}
+切换{text}
+触发{text}
+执行{text}
+播放{text}
+暂停{text}
+声音{text}
+把{text}
+开{text}
+关{text}
+查{text}
+下{text}
+上{text}
+小{text}
+我{text}
+```
+
+
 ## 相关问题
 
 - 与智能音箱对接，域名必须为https。如果没有可联系我，提供HTTP转HTTPS代理服务
