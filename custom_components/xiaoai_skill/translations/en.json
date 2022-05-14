@@ -1,0 +1,26 @@
+{
+    "title": "天猫精灵",
+    "config": {
+        "step": {
+            "user": {
+                "description": "天猫精灵自定义技能",
+                "data": {}
+            }
+        },
+        "error": {},
+        "abort": {}
+    },
+    "options": {
+        "step": {
+            "user": {
+                "description": "没有HTTPS域名，可配置密钥通过第三方服务中转",
+                "data": {
+                    "open_id": "用户OpenID",
+                    "open_mic": "继续开麦",
+                    "debug": "调试模式"
+                }
+            }
+        },
+        "error": {}
+    }
+}
