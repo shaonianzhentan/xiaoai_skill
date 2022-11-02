@@ -12,8 +12,9 @@ from .xiaoai import (XiaoAIAudioItem, XiaoAIDirective, XiaoAIOpenResponse,
 _LOGGER = logging.getLogger(__name__)
 
 # 文本回复
-def build_text_message(to_speak, is_session_end, open_mic):
+def build_text_message(to_speak, is_session_end, open_mic, not_understand=False):
     xiao_ai_response = XiaoAIResponse(
+        not_understand=not_understand,
         to_speak=XiaoAIToSpeak(type_=0, text=to_speak),
         open_mic=open_mic)
     response = xiaoai_response(XiaoAIOpenResponse(version='1.0',
@@ -52,7 +53,7 @@ async def parse_input(event, hass):
     open_mic = options.get('open_mic', True)
     user_id = options.get('open_id', '')
     if user_id != '' and user_id != req.session.user.user_id:
-        return build_text_message('我真的好笨笨哦，不知道你在说啥，换个方式叫我吧', is_session_end=True, open_mic=False)
+        return build_text_message('我真的好笨笨哦，不知道你在说啥，换个方式叫我吧', is_session_end=True, open_mic=False, not_understand=True)
     # 插槽：req.request.slot_info.intent_name
     intent_name = ''
     if hasattr(req.request.slot_info, 'intent_name'):
