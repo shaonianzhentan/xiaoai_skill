@@ -1,7 +1,7 @@
 {
     "domain": "xiaoai_skill",
     "name": "\u5C0F\u7231\u540C\u5B66\u81EA\u5B9A\u4E49\u6280\u80FD",
-    "version": "1.0.0",
+    "version": "2022.12.3",
     "config_flow": true,
     "documentation": "https://github.com/shaonianzhentan/xiaoai_skill",
     "dependencies": [],

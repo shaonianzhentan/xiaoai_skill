@@ -1,9 +1,9 @@
 {
-    "title": "天猫精灵",
+    "title": "小爱同学",
     "config": {
         "step": {
             "user": {
-                "description": "天猫精灵自定义技能",
+                "description": "小爱同学自定义技能",
                 "data": {}
             }
         },
